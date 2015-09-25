@@ -1,8 +1,8 @@
-TL;DR: For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap.
-
 # Running
 
 `ruby cooking_the_books.rb`
+
+TL;DR: For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap.
 
 # Problem
 
