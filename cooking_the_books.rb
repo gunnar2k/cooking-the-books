@@ -14,8 +14,8 @@ end
 # start from the first digit, and for each digit in the number
 #  search for a smaller digit nr to the right of the current digit
 #   if it exists && the current digit index is not 0
-#     replace the smaller nr with the current nr
-#     break out of loop
+#     replace the current digit nr with the discovered digit nr
+#     done
 def solve_for_smallest(problem)
 
   index = 0
@@ -52,17 +52,17 @@ end
 # SOLVE FOR LARGEST POSSIBLE number
 #
 # Algorithm description:
-# for each digit in the number
+# start from the first digit, and for each digit in the number
 #  search for a larger nr to the right of the nr
 #   if it exists && the current index isnt 0
-#     replace the smaller nr with the current nr
-#     break out of loop
+#     replace the current digit nr with the discovered digit nr
+#     done
 def solve_for_largest(problem)
 
   index = 0
   problem.each_char do |nr|
 
-    subproblem = problem[index...9999999999].split("").map(&:to_i)
+    subproblem = problem[index...problem.length].split("").map(&:to_i)
 
     max = subproblem.max
 
@@ -88,7 +88,6 @@ def solve_for_largest(problem)
   end
 
   "#{problem}"
-
 end
 
 # Read input
