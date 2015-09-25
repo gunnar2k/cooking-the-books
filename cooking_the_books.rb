@@ -5,11 +5,15 @@ end
 
 # Define methods for solving sub-problems (smallest and largest possible numbers)
 def solve_for_smallest(problem)
-  # for each nr in set
+
+  # SOLVE FOR SMALLEST POSSIBLE NUMBER
+  #
+  # for each digit
   #  search for a smaller nr to the right of the nr
   #   if it exists && the current index isnt 0
   #     replace the smaller nr with the current nr
   #     break out of loop
+  
   index = 0
   problem.each_char do |nr|
 
@@ -39,18 +43,17 @@ def solve_for_smallest(problem)
   end
 
   "#{problem}"
-
 end
 
+# SOLVE FOR LARGEST POSSIBLE number
+#
+# for each digit
+#  search for a smaller nr to the right of the nr
+#   if it exists && the current index isnt 0
+#     replace the smaller nr with the current nr
+#     break out of loop
+
 def solve_for_largest(problem)
-
-  # puts "Problem="+problem
-
-  # for each nr in set
-  #  search for a smaller nr to the right of the nr
-  #   if it exists && the current index isnt 0
-  #     replace the smaller nr with the current nr
-  #     break out of loop
 
   index = 0
   problem.each_char do |nr|
@@ -92,7 +95,9 @@ T = problems.shift # See Problem Constraints
 count = 1
 while problems.any?
   problem = problems.shift
+
+  # Solve each problem
   puts "Case ##{count}: " + solve(problem.strip)
-  # puts "\n"
+
   count += 1
 end
