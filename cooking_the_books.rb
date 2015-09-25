@@ -13,7 +13,7 @@ def solve_for_smallest(problem)
   #   if it exists && the current index isnt 0
   #     replace the smaller nr with the current nr
   #     break out of loop
-  
+
   index = 0
   problem.each_char do |nr|
 
