@@ -1,4 +1,4 @@
-TL;DR: `For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap`
+TL;DR: For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap
 
 # Problem
 
