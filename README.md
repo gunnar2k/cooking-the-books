@@ -6,13 +6,15 @@ Sometimes a bad accountant wants to make a number larger, and sometimes smaller.
 
 Given a number, how small or large can it be made without being found out?
 
-Input
+### Input
+
 Input begins with an integer T, the number of numbers that need tweaking. Each of the next T lines contains a integer N.
 
-Output
+### Output  
+
 For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap and following the rules above.
 
-Constraints
-1 ≤ T ≤ 100
-0 ≤ N ≤ 999999999
-N will never begin with a leading 0 unless N = 0
+Constraints  
+1 ≤ T ≤ 100  
+0 ≤ N ≤ 999999999  
+N will never begin with a leading 0 unless N = 0  
