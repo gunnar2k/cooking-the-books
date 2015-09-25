@@ -1,23 +1,27 @@
 # Define a general "Solve problem" method
+
 def solve(problem)
+
+  # Output in format according to problem requirements
   "#{solve_for_smallest(problem.dup)} #{solve_for_largest(problem.dup)}"
 end
 
 # Define methods for solving sub-problems (smallest and largest possible numbers)
-def solve_for_smallest(problem)
 
-  # SOLVE FOR SMALLEST POSSIBLE NUMBER
-  #
-  # for each digit
-  #  search for a smaller nr to the right of the nr
-  #   if it exists && the current index isnt 0
-  #     replace the smaller nr with the current nr
-  #     break out of loop
+# SOLVE FOR SMALLEST POSSIBLE NUMBER
+#
+# Algorithm description:
+# start from the first digit, and for each digit in the number
+#  search for a smaller digit nr to the right of the current digit
+#   if it exists && the current digit index is not 0
+#     replace the smaller nr with the current nr
+#     break out of loop
+def solve_for_smallest(problem)
 
   index = 0
   problem.each_char do |nr|
 
-    subproblem = problem[index...9999999999].split("").map(&:to_i)
+    subproblem = problem[index...problem.length].split("").map(&:to_i)
 
     min = subproblem.min
 
@@ -47,12 +51,12 @@ end
 
 # SOLVE FOR LARGEST POSSIBLE number
 #
-# for each digit
-#  search for a smaller nr to the right of the nr
+# Algorithm description:
+# for each digit in the number
+#  search for a larger nr to the right of the nr
 #   if it exists && the current index isnt 0
 #     replace the smaller nr with the current nr
 #     break out of loop
-
 def solve_for_largest(problem)
 
   index = 0
