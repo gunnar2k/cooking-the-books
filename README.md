@@ -1,3 +1,5 @@
+TL;DR: `For the ith number, print a line containing "Case #i: " followed by the smallest and largest numbers that can be made from the original number N, using at most a single swap`
+
 # Problem
 
 Every business can make use of a good accountant and, if they're not big on following the law, sometimes a bad one. Bad accountants try to make more money for their employers by fudging numbers without getting caught.
